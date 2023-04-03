@@ -30,7 +30,8 @@ simply copying, like below, into the templates directory
 Next we need to develop the task to deploy the role
 
 We can do this with a seperate .yml file, we will create a deploy_motd.yml file within baseline/tasks/ that will then be used in the main.yml. This will split up tasks more effectively
-####Motd.yml
+
+#### Motd.yml
 
 ```yml
 ---
@@ -39,7 +40,7 @@ We can do this with a seperate .yml file, we will create a deploy_motd.yml file 
     dest: /etc/motd
 ```
 
-####Main.yml
+#### Main.yml
 
 ```yml
 ---
@@ -53,7 +54,7 @@ Next Step is to install the latest Nagios Client using the role
 [ansible@control1 roles]$ vim baseline/tasks/deploy_nagios.yml
 ```
 
-####Nagios.yml
+#### Nagios.yml
 
 ```yml
 ---
@@ -73,7 +74,7 @@ Next Step is to install the latest Nagios Client using the role
 Our next step is to configure the role to add an entry to /etc/hosts for the Nagios
 Server
 
-####Edit_hosts.yml
+#### Edit_hosts.yml
 
 ```yml
 ---
