@@ -15,3 +15,5 @@ So to start with the first step run the following command, under the assumption 
 ```console
 sudo yum install ansible
 ```
+
+Next the regular steps is to install git source control, add the ansible user, create a passwd for ansible user, and then finally add the nodes you want to control to the hosts file, and then add the ansible user to the sudoers file to perform sudo tasks without a password
