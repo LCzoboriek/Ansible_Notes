@@ -1,0 +1,3 @@
+### Ansible Variables
+
+![](Vars.png)
