@@ -18,5 +18,5 @@ Lets take this playbook as an example
       register: hostname # Registers a variable with the value of hostname, this is only accessible within the play
     - name: Rename hostname when found
       command: mv "{{ target_file }}" /home/ansible/net-info # This will then move the target file
-      when: hostname.state.exists # If hostnames state is exist
+      when: hostname.stat.exists # If hostnames stat is exist
 ```
